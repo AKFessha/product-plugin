@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: product-plugin
-Plugin URI: https://wordpress.org/plugins/health-check/
-Description: display products and add products to table
+Plugin URI: https://github.com/AKFessha/product-plugin
+Description: Display products and add products to table
 Version: 0.1.0
-Author: Awet fessha
-Author URI: http://health-check-team.example.com
+Author: Awet Fessha
+Author URI: https://github.com/AKFessha/product-plugin
 Text Domain: product-plugin
 Domain Path: /languages
 */
