@@ -11,8 +11,9 @@ Domain Path: /languages
 */
 
 //your code goes here
-add_action('wp_head', function(){
-    echo '<script> alert("Welcome to my site!")</script>';
-});
+//Testing add action
+// add_action('wp_head', function(){
+//     echo '<script> alert("Welcome to my site!")</script>';
+// });
 
 
