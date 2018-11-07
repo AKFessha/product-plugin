@@ -13,5 +13,15 @@ Domain Path: /languages
 
 //your code goes here
 
+//protect from security valunerability
+/* if(!defined("ABSPATH")){
+    die;
+    }
+   if(function_exists("add_action")){
+      echo "You silly human , you can't access this file!";
+     exit;
+    }
+*/
+defined("ABSPATH") or die("You silly human , you can't access this file!");
 
 
