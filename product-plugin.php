@@ -22,6 +22,14 @@ Domain Path: /languages
      exit;
     }
 */
-defined("ABSPATH") or die("You silly human , you can't access this file!");
+defined('ABSPATH') or die("You silly human , you can't access this file!");
 
+class ProductPlugin
+{
+
+}
+
+if(class_exists("ProductPlugin")){
+    $productPlugin = new ProductPlugin();
+}
 
