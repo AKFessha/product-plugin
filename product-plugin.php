@@ -24,37 +24,51 @@ Domain Path: /languages
 */
 defined('ABSPATH') or die("You silly human , you can't access this file!");
 
-class ProductPlugin
-{
-    //activation
-    function activate(){
-    //generate a CPT
-    //flush rewrite rules
+// class ProductPlugin
+// {
+//     //activation
+//     function activate(){
+//     //generate a CPT
+//     //flush rewrite rules
     
-    }
+//     }
 
-    //deactivation
-    function deactivate(){
-    ////flush rewrite rules
+//     //deactivation
+//     function deactivate(){
+//     ////flush rewrite rules
 
-    }
-    //uninstall
-    function uninstall(){
+//     }
+//     //uninstall
+//     function uninstall(){
 
-    //delete CPT
-    // delete all the plugin data from DB
-    }
+//     //delete CPT
+//     // delete all the plugin data from DB
+//     }
 
-}
+// }
 
-if(class_exists("ProductPlugin")){
-    $productPlugin = new ProductPlugin();
-}
+// if(class_exists("ProductPlugin")){
+//     $productPlugin = new ProductPlugin();
+// }
 
-//activation
-register_activation_hook(__FILE__, array($productPlugin, "activate"));
-//deactivation
-register_deactivation_hook(__FILE__, array($productPlugin, "deactivate"));
-//uninstall
+// //activation
+// register_activation_hook(__FILE__, array($productPlugin, "activate"));
+// //deactivation
+// register_deactivation_hook(__FILE__, array($productPlugin, "deactivate"));
+// //uninstall
 
+
+add_action('init', function () {
+    register_post_type('products', [
+        'labels' => [
+            'name' => __('Products'),
+            'singular_name' => __('Product'),
+           
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-cart',
+    ]);
+
+});
 
